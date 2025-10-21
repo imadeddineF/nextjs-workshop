@@ -1,0 +1,12 @@
+<section>
+	<h3>🔀 Dynamic Routes</h3>
+	<p><code>app/blog/[slug]/page.tsx</code>:</p>
+	<pre><code class="language-tsx">export default async function BlogPost({
+  params
+}: {
+  params: Promise&lt;{ slug: string }&gt;
+}) {
+  const { slug } = await params
+  return &lt;h1&gt;Post: {slug}&lt;/h1&gt;
+}</code></pre>
+</section>
